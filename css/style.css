@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+main {
+    padding: 0 40px;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#header {
+    height: 100vh;
+    position: relative;
+}
+
+#header h1 {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    color: #fff;
+    font-size: 5.6rem;
+    text-shadow: 2px 2px 5px #000;
+
+    /* Webフォント */
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+#header img {
+    height: 100%;
+}
+
+#header nav {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+#header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+#header nav ul li {
+    background: #000000cc;
+    padding: 10px 20px;
+    box-shadow: 0px 2px #f5f;
+}
+
+#header nav ul li a {
+    color: #fff;
+
+    /* Webフォント */
+    font-family: "Zen Old Mincho", serif;
+    font-weight: bold;
+}
+
+.ttl {
+    padding: 0 0 3px 8px;
+    border-bottom: 2px solid #f5c;
+
+    /* Webフォント */
+    font-family: "Zen Old Mincho", serif;
+    font-weight: bold;
+}
+
+#news ul,
+#menu ul {
+    margin: 40px 20px 10px;
+}
+
+#news ul li {
+    margin-bottom: 20px;
+}
+
+#menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+#menu ul img {
+    aspect-ratio: 16 / 9;
+}
+
+#footer {
+    padding: 40px 30px 10px;
+    background: #000;
+    color: #fff;
+}
+
+#footer .grid {
+    max-width: 800px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 240px auto;
+    gap: 40px;
+}
+
+#footer .grid a {
+    color: #fff;
+    font-size: 2.4rem;
+
+    /* Webフォント */
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+#footer .grid ul li {
+    margin-bottom: 8px;
+}
+
+#footer p {
+    margin-top: 80px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+@media screen and (max-width:480px) {
+    #header {
+        height: calc(100vh - 48px);
+    }
+
+    #header h1 {
+        font-size: 2.8rem;
+        top: 10px;
+    }
+
+    #header nav ul li {
+        padding: 5px 10px;
+        font-size: .8rem;
+    }
+
+    #footer .grid {
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+}
