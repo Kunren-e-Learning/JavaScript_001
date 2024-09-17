@@ -93,6 +93,11 @@ section {
     margin-bottom: 20px;
 }
 
+#news ul li span{
+    margin-right: 40px;
+    color:#a50;
+}
+
 #menu ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
